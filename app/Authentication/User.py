@@ -30,7 +30,7 @@ class User(UserMixin):
         for username, v in load().items():
             if v.get('id') == user_id:
                 return User(v)
-        return Non
+        return None
 
 
 
